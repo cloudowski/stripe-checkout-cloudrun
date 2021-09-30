@@ -1,0 +1,36 @@
+container_image = "gcr.io/YOUR-PROJECT/stripe-checkout:0.1.0"
+dns_domain      = "stripe.example.com"
+region          = "europe-west4"
+project         = "YOUR-PROJECT"
+service_name    = "stripe"
+
+config = [
+  {
+    name  = "PRICE",
+    value = "price_1234",
+  },
+  {
+    name  = "STRIPE_PUBLISHABLE_KEY",
+    value = "pk_test_1234",
+  },
+  {
+    name  = "STRIPE_SECRET_KEY",
+    value = "rk_test_1234",
+  },
+  {
+    name  = "STRIPE_WEBHOOK_SECRET",
+    value = "whsec_1234",
+  },
+  {
+    name  = "STRIPE_LOCALE",
+    value = "pl",
+  },
+  {
+    name  = "STRIPE_URL_SUCCESS",
+    value = "https://example.com/success",
+  },
+  {
+    name  = "STRIPE_URL_CANCEL",
+    value = "https://example.com/cancel",
+  },
+]
